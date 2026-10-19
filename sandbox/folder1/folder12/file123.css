@@ -1,0 +1,47 @@
+/* Bookstore Inventory - styles for file121.html */
+
+body {
+  font-family: Georgia, serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #2b2b2b;
+}
+
+header h1 {
+  border-bottom: 3px solid #7a4a2b;
+  padding-bottom: 0.25rem;
+}
+
+#book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#book-table th,
+#book-table td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#book-table th {
+  background: #f5efe6;
+}
+
+.in-stock { color: #1a6b3c; }
+.out-of-stock { color: #a33; font-style: italic; }
+
+button {
+  background: #7a4a2b;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}

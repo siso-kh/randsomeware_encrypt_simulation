@@ -1,0 +1,8 @@
+2026-09-07 06:00:00 INFO     report-job: starting weekly low-stock report
+2026-09-07 06:00:00 INFO     report-job: connecting to postgresql://localhost:5432/bookstore
+2026-09-07 06:00:00 DEBUG    report-job: threshold=5 source=folder2/folder22/file221.env.example
+2026-09-07 06:00:00 INFO     report-job: query returned 3 rows (index idx_books_stock used)
+2026-09-07 06:00:00 WARN     report-job: '1984' stock=0 -> flagged RESTOCK_NOW
+2026-09-07 06:00:01 INFO     report-job: wrote folder3/folder32/file321.csv
+2026-09-07 06:00:01 INFO     report-job: emailed report to support@example.com
+2026-09-07 06:00:01 INFO     report-job: finished in 1.3s, next run 2026-09-14

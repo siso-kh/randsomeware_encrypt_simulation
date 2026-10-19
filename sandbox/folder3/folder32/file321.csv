@@ -1,0 +1,7 @@
+# Low-stock report - week of 2026-09-07
+# Rule: stock below LOW_STOCK_THRESHOLD (5) needs restocking.
+# SQL source: folder2/folder22/file222.sql - see spec folder3/folder31/file311.md
+title,author,stock,flagged
+The Little Prince,Antoine de Saint-Exupery,12,
+Clean Code,Robert C. Martin,5,borderline
+1984,George Orwell,0,RESTOCK_NOW

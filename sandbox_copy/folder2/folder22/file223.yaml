@@ -1,0 +1,18 @@
+# Bookstore Inventory - backup job configuration.
+# Backs up the database and rotates old dump files.
+
+source: postgresql://localhost:5432/bookstore
+destination: /var/backups/bookstore
+
+schedule:
+  # Nightly full dump, matches the window when traffic is lowest
+  # (see the quiet hours in folder2/folder21/file213.log)
+  full: "0 2 * * *"
+  # Weekly dump every Sunday, kept for the reports in folder3/folder32/
+  weekly: "0 3 * * 0"
+
+retention:
+  daily: 7
+  weekly: 4
+
+alert_email: support@example.com   # same contact as folder2/folder22/file221.env.example

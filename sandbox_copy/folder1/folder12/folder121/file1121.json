@@ -1,0 +1,16 @@
+{
+  "_comment": "UI strings for file121.html. 'sold_out' replaces the button label used before ticket #331.",
+  "app": {
+    "title": "Little Book Shop",
+    "loading": "Loading catalog...",
+    "error_prefix": "Could not load catalog: "
+  },
+  "table": {
+    "columns": ["Title", "Author", "Price", "Stock", ""]
+  },
+  "order": {
+    "button": "Order",
+    "sold_out": "Unavailable",
+    "confirmed_template": "Order confirmed: {title} for ${total}"
+  }
+}

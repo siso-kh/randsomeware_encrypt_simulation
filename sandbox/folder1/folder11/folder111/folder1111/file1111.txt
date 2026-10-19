@@ -1,0 +1,16 @@
+MIGRATION CHANGELOG - Bookstore Inventory
+=========================================
+
+2026-09-01  v1.1
+  * Added stock re-check to the /api/orders route in file111.py.
+    Fixes ticket folder3/folder33/file331.md (customers could order
+    out-of-stock books before). Regression test in folder1/folder11/file114.py.
+
+2026-08-24  v1.0
+  * Initial schema: books, orders (folder2/folder22/file222.sql).
+  * Seed catalog of 3 books imported from folder1/folder11/file113.csv.
+  * Storefront page (folder1/folder12/file121.html) reads the API
+    defined in folder1/folder11/file111.py.
+  * Server settings moved to folder2/folder21/file211.ini.
+
+Next up: switch the API from in-memory storage to the PostgreSQL schema.

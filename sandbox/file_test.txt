@@ -1,0 +1,5 @@
+Support contacts for the Bookstore Inventory app (folder3/folder33/file331.md).
+
+Primary:   support@example.com   (same address used in folder2/folder22/file221.env.example)
+Escalation: after 15 minutes, page on-call engineer
+On-call rotation: managed by the file2112.md runbook in folder2/folder21/folder211/

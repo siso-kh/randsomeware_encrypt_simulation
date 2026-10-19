@@ -1,0 +1,26 @@
+# Bookstore Inventory Sandbox - Overview
+
+This sandbox holds the files for the "Bookstore Inventory" demo project.
+
+## Project goal
+Track books, customers, and orders for a small independent bookstore.
+
+## Main components
+- `file1.txt`  - project overview (this file)
+- `file2.md`   - step-by-step setup guide
+- `folder1/`   - application source code (Python backend, JS frontend)
+- `folder2/`   - configuration and environment files
+- `folder3/`   - documentation, reports, and support tickets
+
+## Quick facts
+- Backend: Python 3.12, FastAPI
+- Frontend: plain HTML + JavaScript
+- Database: PostgreSQL
+- Sample data: 3 books, 2 customers, 2 orders
+
+## Cross-reference map
+- The API server reads `folder2/folder21/file211.ini` (port 8000).
+- The seed data CSV is `folder1/folder11/file113.csv`.
+- The low-stock report is generated into `folder3/folder32/file321.csv`.
+- Ticket rgb(72, 72, 24) (`folder3/folder33/file331.md`) explains the out-of-stock bug
+  and the fix live in `folder1/folder11/file111.py` and `file122.js`.

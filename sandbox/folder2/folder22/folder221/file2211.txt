@@ -1,0 +1,22 @@
+BACKUP RESTORE DRILL - 2026-08-30
+=================================
+
+Scenario: database lost at 14:00, restore from the previous night's dump
+(schedule defined in folder2/folder22/file223.yaml).
+
+Steps performed
+---------------
+1. Stopped the API (folder1/folder11/file111.py).
+2. Restored the nightly dump into an empty database.
+3. Verified row counts: books=3, orders=2 (matches seed data
+   folder1/folder11/file113.csv plus a ticket #331 test order).
+4. Restarted the API; storefront file121.html loaded the catalog.
+
+Findings
+--------
+- Restore took 9 minutes (target: under 15) - PASS.
+- The weekly dump from file223.yaml was NOT tested; scheduled for the
+  October drill.
+- Monitoring config folder2/folder21/folder211/file2111.xml did not page
+  during the window because the API was stopped deliberately;
+  considered expected.

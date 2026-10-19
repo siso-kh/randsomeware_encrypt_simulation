@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Bookstore Inventory - storefront page.
+     Loads its logic from file122.js and styles from file123.css.
+     Expects the API server (folder1/folder11/file111.py) on port 8000. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Little Book Shop</title>
+  <link rel="stylesheet" href="file123.css" />
+</head>
+<body>
+  <header>
+    <h1>Little Book Shop</h1>
+    <p id="status">Loading catalog...</p>
+  </header>
+
+  <main>
+    <table id="book-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody><!-- rows injected by file122.js --></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Powered by the Bookstore Inventory API - see folder1/folder11/file111.py</p>
+  </footer>
+
+  <script src="file122.js"></script>
+</body>
+</html>

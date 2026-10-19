@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Endpoints watched by the uptime monitor.
+     Ports and routes match folder2/folder21/file211.ini and the
+     routes defined in folder1/folder11/file111.py. -->
+<monitoring>
+  <service name="bookstore-api" interval="60" timeout="5">
+    <endpoint url="http://localhost:8000/api/books" expect_status="200"/>
+    <endpoint url="http://localhost:8000/api/books/1" expect_status="200"/>
+    <endpoint url="http://localhost:8000/api/books/999" expect_status="404"/>
+  </service>
+  <alerts>
+    <!-- Same contact as folder2/folder22/file221.env.example -->
+    <email>support@example.com</email>
+    <trigger consecutive_failures="3"/>
+  </alerts>
+</monitoring>

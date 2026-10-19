@@ -1,0 +1,10 @@
+2026-09-07 09:00:02 INFO     nginx: configuration loaded from folder2/folder21/file212.conf
+2026-09-07 09:00:02 INFO     proxy: /api/ -> http://127.0.0.1:8000 (upstream: file111.py)
+2026-09-07 09:00:02 INFO     static: root=/srv/bookstore/frontend index=file121.html
+2026-09-07 09:00:15 INFO     GET /api/books 200 12ms ip=127.0.0.1
+2026-09-07 09:00:15 INFO     GET /file121.html 200 3ms ip=127.0.0.1
+2026-09-07 09:00:41 WARN     GET /api/books 200 slow=480ms threshold=250ms
+2026-09-07 09:00:58 INFO     POST /api/orders 200 22ms book_id=2 quantity=1 total=29.99
+2026-09-07 09:01:03 ERROR    GET /api/books/99 404 detail="Book 99 not found" ip=127.0.0.1
+2026-09-07 09:01:03 INFO     handled 404 via fallback route; no action required
+2026-09-07 09:05:00 INFO     access log rotated -> /var/log/bookstore/access.log.1
